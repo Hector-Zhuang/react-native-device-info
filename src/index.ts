@@ -182,7 +182,6 @@ export const getAppSetId = () =>
 const defaultHingeInfo: HingeInfo = { angle: 0 };
 
 const [getHingeInfoInternal, getHingeInfoSyncInternal] = getSupportedPlatformInfoFunctions({
-  memoKey: 'hingeInfo',
   supportedPlatforms: ['ios'],
   getter: () => RNDeviceInfo.getHingeInfo(),
   syncGetter: () => RNDeviceInfo.getHingeInfoSync(),
